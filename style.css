@@ -89,3 +89,10 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+.profile-pic {
+    width: 100px; /* Set width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 10px;
+}
