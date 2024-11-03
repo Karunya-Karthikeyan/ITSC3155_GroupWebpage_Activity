@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Coding Cadets</h1>
+    <!-- Example team logo -->
+    <img src="images/minion.png" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <h2>Karunya Karthikeyan</h2>
+        <p>Frontend Developer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">Karunya is experienced with frontend developing from ITIS 3135. She likes to use HTML,CSS, and Javascript.
+            <br><img src="images/minionavatar.png" alt="KarunyaImage" width="150" height="150">
+            <br> Check out more about HTML and web development on
+            <br> <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+        </p>
+    </div>
+    <div class="card">
+    <h2>Bobby Lo</h2>
+    <p>AIML Researcher</p>
+    <button onclick="toggleBio('bio5')">Show Bio</button>
+    <p id="bio5" class="bio">
+        Bobby Lo is a UNCC CS student who has 6 years of experience in the software engineering industry. Bobby specializes in AIML and aims to contribute to research in this field to shape our future.
+        <br><img src="images/bobby.png" alt="Bobby Lo's photo" width="150" height="150">
+        <br>One of Bobby's frequently visting website to stay current with AI news :
+        <br><a href="https://www.wired.com/tag/artificial-intelligence/" target="_blank">DeepLearning.AI</a>
+    </p>
+    </div>
+    <div class="card">
+        <h2>Emily Johnson</h2>
+        <p>UI/UX Designer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">Emily is a UI/UX designer with a passion for creating user-friendly interfaces.</p>
+    </div>
+    <div class="card">
+         <img src="images/vatsal-pic.png" alt="Vatsal Patel's photo" class="profile-pic"> <!-- Add your picture here -->
+         <h2>Vatsal Patel</h2>
+         <p>Developer</p>
+    <button onclick="toggleBio('bio4')">Show Bio</button>
+    <p id="bio4" class="bio">Dedicated developer focused on efficient coding practices and innovative solutions.
+        <br>Check out more about the coding practice.
+        <br> <a href="https://www.khanacademy.org/computing/computer-programming/html-css" target="_blank">Fav CS Resource</a>
+
+    </p>
+    </div>
+
+
+
+
+</div>
+
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+    <p>Every team member’s ideas and perspectives are valued.<br>
+    Each member commits to responsibilities and meets deadlines<br>
+        We are proactive about learning and sharing new skills or knowledge that can help the team grow.<br>
+    We ensure everyone participates and contributes fairly to all projects and tasks.<br>
+         We celebrate team successes and support each other through challenges, fostering a positive, encouraging environment.
+    </p>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
